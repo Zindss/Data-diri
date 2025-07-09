@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Devin Emmanuel</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Warna latar belakang yang lebih terang */
+            color: #333;
+        }
+        .sidebar {
+            background-color: #ffffff; /* Latar belakang sidebar putih */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem; /* Sudut membulat */
+            padding: 1.5rem;
+        }
+        .main-content {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 1rem; /* Sudut membulat */
+            padding: 2rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* Sudut membulat */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            padding: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #4f46e5; /* Warna ungu indigo */
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #4338ca; /* Warna ungu indigo yang lebih gelap saat hover */
+        }
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            color: #555;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .nav-item:hover, .nav-item.active {
+            background-color: #e0e7ff; /* Latar belakang biru muda saat hover/aktif */
+            color: #4f46e5; /* Teks ungu indigo saat hover/aktif */
+        }
+        .nav-item i {
+            margin-right: 0.75rem;
+        }
+        .profile-img {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #4f46e5; /* Border ungu di sekitar gambar profil */
+        }
+        .section-title {
+            font-size: 1.75rem; /* Ukuran font yang lebih besar untuk judul bagian */
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #e5e7eb; /* Garis bawah tipis */
+            padding-bottom: 0.5rem;
+        }
+        .project-item {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .project-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="flex flex-col lg:flex-row min-h-screen p-4 lg:p-8 space-y-4 lg:space-y-0 lg:space-x-8">
+
+    <!-- Sidebar -->
+    <aside class="sidebar w-full lg:w-1/4 flex flex-col items-center p-6 lg:p-8">
+        <div class="flex flex-col items-center mb-6">
+            <img src="https://placehold.co/128x128/4f46e5/ffffff?text=DE" alt="Gambar Profil Devin" class="profile-img mb-4">
+            <h1 class="text-2xl font-bold text-gray-800">Rheimanda Devin Emmanuel</h1>
+            <p class="text-gray-600 text-center">Mahasiswa Ilmu Komputer | Pengembang Web & Desainer UI/UX</p>
+        </div>
+
+        <nav class="w-full mb-6">
+            <ul class="space-y-2">
+                <li><a href="#about" class="nav-item active"><i class="fas fa-user"></i> Tentang Saya</a></li>
+                <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> Keahlian</a></li>
+                <li><a href="#experience" class="nav-item"><i class="fas fa-briefcase"></i> Pengalaman</a></li>
+                <li><a href="#projects" class="nav-item"><i class="fas fa-project-diagram"></i> Proyek</a></li>
+                <li><a href="#achievements" class="nav-item"><i class="fas fa-trophy"></i> Prestasi</a></li>
+                <li><a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+
+        <div class="flex space-x-4">
+            <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300"><i class="fab fa-linkedin text-2xl"></i></a>
+            <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300"><i class="fab fa-github text-2xl"></i></a>
+            <a href="#" class="text-gray-600 hover:text-red-500 transition duration-300"><i class="fas fa-envelope text-2xl"></i></a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content flex-1 p-6 lg:p-10">
+        <!-- About Section -->
+        <section id="about" class="mb-8">
+            <h2 class="section-title">Tentang Saya</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Saya Rheimanda Devin Emmanuel, seorang mahasiswa Ilmu Komputer semester VI dengan IPK $3.85/4.00$. Saya memiliki hasrat yang kuat untuk membangun sistem kompleks mulai dari konsep hingga implementasi. Saya mahir dalam berbagai teknologi, termasuk HTML5, CSS3, JavaScript, React.js, Node.js, dan alat desain UI/UX.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                Saya selalu mencari peluang magang untuk lebih mengembangkan keahlian saya dan berkontribusi pada inovasi teknologi. Saya percaya pada pembelajaran berkelanjutan dan selalu siap menghadapi tantangan baru.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="mb-8">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-2">Pengembangan Web</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                        <li>React.js, Next.js</li>
+                        <li>Node.js, Express.js</li>
+                        <li>Tailwind CSS, Bootstrap</li>
+                        <li>RESTful APIs</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-2">Desain UI/UX</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Figma, Adobe XD</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>User Research</li>
+                        <li>Desain Responsif</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="text-lg font-semibold mb-2">Basis Data & Lainnya</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>MySQL, PostgreSQL, MongoDB</li>
+                        <li>Git & GitHub</li>
+                        <li>Firebase</li>
+                        <li>Pemecahan Masalah</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-8">
+            <h2 class="section-title">Pengalaman</h2>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800">Koordinator Divisi Pendidikan</h3>
+                <p class="text-gray-600 mb-2">Himpunan Mahasiswa Ilmu Komputer | Januari 2023 - Sekarang</p>
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed">
+                    <li>Bertanggung jawab atas perencanaan dan pelaksanaan program pendidikan untuk anggota himpunan.</li>
+                    <li>Mengorganisir lokakarya dan sesi pelatihan tentang berbagai topik teknologi.</li>
+                    <li>Memimpin tim untuk mengembangkan materi pembelajaran dan sumber daya.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-8">
+            <h2 class="section-title">Proyek</h2>
+            <div class="space-y-6">
+                <div class="card project-item">
+                    <h3 class="text-xl font-semibold text-gray-800">Sistem Informasi Akademik Multilevel (SIAKAD)</h3>
+                    <p class="text-gray-600 mb-2">Proyek Akhir | Januari 2024 - Mei 2024</p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Mengembangkan sistem informasi akademik yang komprehensif dengan peran pengguna multilevel (mahasiswa, dosen, admin). Fitur termasuk manajemen nilai, pendaftaran mata kuliah, dan jadwal. Dibangun menggunakan React.js untuk frontend dan Node.js/Express.js untuk backend, dengan MySQL sebagai basis data.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded-full">React.js</span>
+                        <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Express.js</span>
+                        <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MySQL</span>
+                    </div>
+                </div>
+
+                <div class="card project-item">
+                    <h3 class="text-xl font-semibold text-gray-800">Sistem Manajemen Gudang Perusahaan Berbasis API</h3>
+                    <p class="text-gray-600 mb-2">Proyek Kelompok | September 2023 - Desember 2023</p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Merancang dan mengimplementasikan sistem manajemen gudang yang digerakkan oleh API untuk melacak inventaris, mengelola pesanan, dan mengoptimalkan operasi gudang. Fokus pada arsitektur microservices dan integrasi API yang kuat.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Node.js</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">MongoDB</span>
+                        <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">REST API</span>
+                    </div>
+                </div>
+
+                <div class="card project-item">
+                    <h3 class="text-xl font-semibold text-gray-800">Aplikasi E-commerce untuk Sania Konveksi</h3>
+                    <p class="text-gray-600 mb-2">Proyek Individu | Mei 2023 - Agustus 2023</p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Membangun platform e-commerce yang berfungsi penuh untuk Sania Konveksi, memungkinkan pelanggan untuk menelusuri produk, melakukan pemesanan, dan mengelola akun mereka. Termasuk fitur keranjang belanja, checkout, dan manajemen produk.
+                    </p>
+                    <div class="mt-3 flex flex-wrap gap-2">
+                        <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded-full">HTML</span>
+                        <span class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded-full">CSS</span>
+                        <span class="bg-lime-100 text-lime-800 text-xs font-medium px-2.5 py-0.5 rounded-full">JavaScript</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded-full">PHP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="mb-8">
+            <h2 class="section-title">Prestasi</h2>
+            <div class="card">
+                <ul class="list-disc list-inside text-gray-700 leading-relaxed space-y-2">
+                    <li>IPK Tinggi: $3.85/4.00$</li>
+                    <li>Peserta Konferensi Internasional tentang Transformasi Digital</li>
+                    <li>Sertifikasi: Google IT Support Professional Certificate</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-8">
+            <h2 class="section-title">Kontak</h2>
+            <div class="card">
+                <p class="text-gray-700 mb-2"><i class="fas fa-envelope mr-2 text-gray-500"></i> Email: <a href="mailto:devin.emmanuel@example.com" class="text-blue-600 hover:underline">devin.emmanuel@example.com</a></p>
+                <p class="text-gray-700 mb-2"><i class="fas fa-phone mr-2 text-gray-500"></i> Telepon: +62 812-3456-7890</p>
+                <p class="text-gray-700"><i class="fas fa-map-marker-alt mr-2 text-gray-500"></i> Lokasi: Purwodadi, Jawa Tengah, Indonesia</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript untuk menyorot item navigasi saat digulir
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-item');
+
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.7
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        navItems.forEach(item => {
+                            item.classList.remove('active');
+                        });
+                        const currentNavItem = document.querySelector(`.nav-item[href="#${entry.target.id}"]`);
+                        if (currentNavItem) {
+                            currentNavItem.classList.add('active');
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
